@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>RPG</title>
+</head>
+<body>
+	<!-- Row 1 for header West World RPG-->
+	<div class="row">
+		<div class="col-md-7"></div>
+		<div class="col-md-5"><h1>WESTWORLD RPG!</h1></div>
+	</div>
+
+	<div class="container">
+	
+		
+			<!-- empty row for Your charter title after character is chosen by user-->
+		<div id="yourCh" class="row"></div>
+			
+			<!-- row 2 Images start here-->
+			<div class="row" id="chrow">
+				<!--col for character 1-->
+				<div id="dolores" class="col-md-2 characters btn">
+
+					<!--name of character-->
+					<p class="center">Dolores Abernathy</p>
+					<!--character img-->
+					<img class="img-responsive" src="assets/images/doloresabernathy.jpeg">
+					<!-- Health points, will be manipulated in jQuery-->
+					<p id="dhp" class="center">HP</p>
+				</div>
+				
+				<!--col for character 2-->
+				<div id="teddy" class="col-md-2 characters btn">
+
+					<!--name of character-->
+					<p class="center">Teddy Flood</p>
+					<!--character img-->
+					<img class="img-responsive" src="assets/images/teddyflood.jpeg">
+					<!-- Health points, will be manipulated in jQuery-->
+					<p id="thp" class="center">HP</p>
+					
+
+				</div>
+				
+				<!--col for character 3-->
+				<div id="bernard" class="col-md-2 characters btn">
+					
+					<!--name of character-->
+					<p class="center">Bernard Lowe</p>
+					<!--character img-->
+					<img  class="img-responsive" src="assets/images/bernardlowe.jpeg">
+					<!-- Health points, will be manipulated in jQuery-->
+					<p id="bhp" class="center">HP</p>
+				</div>
+					
+				
+				<!--col for character 4-->
+				<div id="maninblk" class="col-md-2 characters btn">
+					
+					<!--name of character-->
+					<p class="center">The Man in Black</p>
+					<!--character img-->
+					<img class="img-responsive" src="assets/images/themaninblack.jpeg">
+					<!-- Health points, will be manipulated in jQuery-->
+					<p id="mnbhp" class="center">HP</p>
+				</div>
+					
+
+				<!-- empty div for 12 grid representation -->
+				<div class="col-md-4"></div>
+				
+			</div>
+		
+		
+		<!--row 3 select a character-->
+		<div class="row">
+			<h3>Your Character</h3>
+		</div>
+		
+		<!--row 4 Enemies avalible to attack-->
+		<div class="row">
+			<h3>Enemies Available to Attack</h3>
+		</div>
+		
+		<!--row 5 use jquery to move images into this row after user selected char enemy-->
+		<div class="row" id="row5">
+			
+		</div>
+		
+		<!--row 6 Fight section -->
+		<div class="row">
+			<h3> Fight Section</h3>
+		</div>
+		
+		<!--row 7 attack button  -->
+		<div class="row">
+			<button type="button" class="btn btn-danger">Attack</button>
+		</div>
+		
+		
+		<!--8 Defender title -->
+		<div class="row"> <h3>Defender</h3></div>
+			
+		<!--9 jquery in  image of defneder-->
+		<div class="row" id="defend"> </div>
+
+		
+		
+		
+		<!--row 10 display users attack to defender & display enemies counter attack  -->
+		<div class="row">
+
+		<!--Display You attacked "name of character" for damage of "variable attack power" -->
+	
+			
+		<!--Display  "name of character" attacked you back for damage of "variable counter attack" -->
+		</div>
+	</div>
+
+</body>
+</html>

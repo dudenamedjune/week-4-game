@@ -1,0 +1,13 @@
+.center{
+	text-align: center;
+}
+.characters{
+	background-color: grey;
+}
+body{
+	background-image: url("../images/westworld.jpg");
+	background-size: cover;
+}
+h3, h1{
+	color: white;
+}
